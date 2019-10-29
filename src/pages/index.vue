@@ -26,7 +26,7 @@
       <div style="display: flex;justify-content: center;" class="q-pa-md q-gutter-sm">
         <q-btn
           type="a"
-          href="https://github.com"
+          href="https://github.com/vieruuuu/tema-info"
           target="_blank"
           rounded
           outline
