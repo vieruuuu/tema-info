@@ -24,7 +24,7 @@
     >
       <q-list>
         <q-item-label header>Navigare</q-item-label>
-        <q-item to="/introducere">
+        <q-item to="/#">
           <q-item-section avatar>
             <q-icon name="home" />
           </q-item-section>
@@ -64,16 +64,24 @@
             <q-item-label>Înființarea Brave Software</q-item-label>
           </q-item-section>
         </q-item>
+        <q-item to="/final">
+          <q-item-section avatar>
+            <q-icon name="done" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Final</q-item-label>
+          </q-item-section>
+        </q-item>
       </q-list>
     </q-drawer>
 
     <q-page-container>
-      <div :style="$route.path !== '/' ? 'max-width: 1000px;margin: 0 auto;' : 'position: relative;'">
-       <div :style="$route.path !== '/' ? 'margin-left:20px;' : ''">
+      <div :style="$route.path !== '/final' ? 'max-width: 1000px;margin: 0 auto;' : 'position: relative;'">
+       <div :style="$route.path !== '/final' ? 'margin-left:20px;' : ''">
          <transition
          mode="out-in"
-         :enter-active-class="$route.path === '/' ? 'animated fadeIn' : ''"
-         :leave-active-class="$route.path === '/' ? 'animated fadeOut' : ''"
+         enter-active-class="animated fadeIn"
+         leave-active-class="animated fadeOut"
          >
           <router-view />
          </transition>
@@ -89,15 +97,15 @@ export default {
 
   data () {
     return {
-      leftDrawerOpen: this.$route.path !== '/',
+      leftDrawerOpen: this.$route.path !== '/final',
       macarOData: false,
-      seVedeHeaderul: this.$route.path !== '/'
+      seVedeHeaderul: this.$route.path !== '/final'
     }
   },
 
   watch: {
     '$route.path' (val) {
-      if (val === '/') {
+      if (val === '/final') {
         this.leftDrawerOpen = false
         this.seVedeHeaderul = false
         this.macarOData = false

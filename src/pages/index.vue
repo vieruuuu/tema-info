@@ -1,57 +1,25 @@
 <template>
-  <q-page class="bg-primary text-white">
-    <div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
-      <div style="text-align: center" class="q-pa-md">
-        <p class="text-h2">Brendan Eich</p>
-        <p class="text-subtitle1">website realizat de</p>
-        <p class="text-h4">Vieru Andrei</p>
-        <br />
+  <q-page>
+    <h2>Introducere</h2>
+
+    <div class="row justify-center">
+      <div class="col-12 col-md-6">
         <p
           class="text-body1"
-        >Website creat folosind Quasar, un framework JavaScript pentru realizarea interfețelor grafice utilizând Vue.js.</p>
-        <p class="text-body1">Website-ul este de tip SPA (single page aplication), rescrie pagina curentă, în loc să încarce pagini noi de pe server.</p>
-        <p class="text-body1">Codul sursă este disponibil pe Github.</p>
+        >Brendan Eich născut la data de 4 Iulie 1961 este un dezvoltator american și creatorul limbajului de programare JavaScript.</p>
+        <p
+          class="text-body1"
+        >Acesta a fost co-fondatorul proiectului Mozilla, fundația Mozilla, și corporația Mozilla.</p>
+        <p
+          class="text-body1"
+        >Acum este directorul executiv al Brave Software, o companie ce a dezvoltat un nou browser ce promite mult mai multă intimitate în mediul online, securitate îmbunătățită și o viteză de navigare cu mult peste cea a competitorilor.</p>
       </div>
-
-      <div style="display: flex;justify-content: center;">
-        <q-btn rounded outline color="white" to="/introducere" label="Introducere" />
+      <div class="col-12 col-md-6">
+        <img alt="Brendan Eich"  style="width: 50%;display:block;margin:auto;" src="~assets/brendaneich25563.web_.jpg" />
       </div>
-
-      <br />
-
-      <div style="text-align: center" class="q-pa-md">
-        <p class="text-h4">Resurse</p>
-      </div>
-
-      <div style="display: flex;justify-content: center;" class="q-pa-md q-gutter-sm">
-        <q-btn
-          type="a"
-          href="https://github.com/vieruuuu/tema-info"
-          target="_blank"
-          rounded
-          outline
-          color="white"
-          label="Github"
-        />
-        <q-btn
-          type="a"
-          href="https://quasar.dev"
-          target="_blank"
-          rounded
-          outline
-          color="white"
-          label="Quasar"
-        />
-        <q-btn
-          type="a"
-          href="https://vuejs.org"
-          target="_blank"
-          rounded
-          outline
-          color="white"
-          label="Vue.js"
-        />
-      </div>
+    </div>
+    <div class="q-pa-lg flex flex-center">
+        <q-btn flat rounded color="primary" to="/tinerete" icon-right="navigate_next" label="Tinerețe" />
     </div>
   </q-page>
 </template>

@@ -26,6 +26,14 @@
         icon="navigate_before"
         label="Proiectul Mozilla"
       />
+      <q-btn
+        flat
+        rounded
+        color="primary"
+        to="/final"
+        icon-right="navigate_next"
+        label="Final"
+      />
     </div>
     </div>
   </q-page>
