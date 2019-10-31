@@ -17,6 +17,13 @@
     <p
       class="text-body1"
     >În august 2005, după ce a ocupat funcția de tehnolog principal și ca membru al consiliului de administrație al Fundației Mozilla, Brendan Eich a devenit ofițer tehnic șef al recent fondată Mozilla Corporation, menită să fie brațul pentru profit al Fundației Mozilla.</p>
+
+    <div class="justify-center">
+      <img alt="Mozilla"  style="width: 60%;display:block;margin:auto;" src="~assets/spidermonkey.jpg" />
+    </div>
+
+    <br>
+
     <p
       class="text-body1"
     >Brendan Eich a continuat să „dețină” modulul Mozilla SpiderMonkey, motorul său JavaScript, până când a trecut în proprietatea acestuia în 2011.</p>
