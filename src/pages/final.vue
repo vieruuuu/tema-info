@@ -2,9 +2,7 @@
   <q-page class="bg-primary text-white">
     <div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
       <div style="text-align: center" class="q-pa-md">
-        <p class="text-h3">Mulțumesc pentru timpul acordat</p>
-        <p class="text-subtitle1">website realizat de</p>
-        <p class="text-h4">Vieru Andrei</p>
+        <p class="text-h4">Detalii tehnice</p>
         <br />
         <p
           class="text-body1"
@@ -24,33 +22,64 @@
       </div>
 
       <div style="display: flex;justify-content: center;" class="q-pa-md q-gutter-sm">
+        <transition
+         mode="out-in"
+         enter-active-class="animated fadeIn"
+         leave-active-class="animated fadeOut"
+         :duration="200"
+         >
+          <q-btn
+            :key="btn1"
+            @mouseenter="btn1 = 'github.com/vieruuuu/tema-info'"
+            @mouseleave="btn1 = 'Github'"
+            type="a"
+            href="https://github.com/vieruuuu/tema-info"
+            target="_blank"
+            rounded
+            outline
+            color="white"
+            :label="btn1"
+          />
+        </transition>
+
+        <transition
+         mode="out-in"
+         enter-active-class="animated fadeIn"
+         leave-active-class="animated fadeOut"
+         :duration="200"
+         >
         <q-btn
-          type="a"
-          href="https://github.com/vieruuuu/tema-info"
-          target="_blank"
-          rounded
-          outline
-          color="white"
-          label="Github"
-        />
-        <q-btn
+            :key="btn2"
+            @mouseenter="btn2 = 'quasar.dev'"
+            @mouseleave="btn2 = 'Quasar'"
           type="a"
           href="https://quasar.dev"
           target="_blank"
           rounded
           outline
           color="white"
-          label="Quasar"
+          :label="btn2"
         />
+        </transition>
+        <transition
+         mode="out-in"
+         enter-active-class="animated fadeIn"
+         leave-active-class="animated fadeOut"
+         :duration="200"
+         >
         <q-btn
+          :key="btn3"
+          @mouseenter="btn3 = 'vuejs.org'"
+          @mouseleave="btn3 = 'Vue.js'"
           type="a"
           href="https://vuejs.org"
           target="_blank"
           rounded
           outline
           color="white"
-          label="Vue.js"
+          :label="btn3"
         />
+        </transition>
       </div>
     </div>
   </q-page>
@@ -58,6 +87,13 @@
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  data () {
+    return {
+      btn1: 'Github',
+      btn2: 'Quasar',
+      btn3: 'Vue.js'
+    }
+  }
 }
 </script>
