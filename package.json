@@ -1,34 +1,42 @@
 {
   "name": "tema-info",
   "version": "0.0.1",
-  "description": "Brendan Eich, creatorul limbajului de programare JavaScript",
+  "description": "",
   "productName": "Brendan Eich",
-  "cordovaId": "org.cordova.quasar.app",
-  "capacitorId": "",
-  "author": "vieru",
+  "author": "vieru <mixerandr3w001@gmail.com>",
   "private": true,
   "scripts": {
-    "lint": "eslint --ext .js,.vue src",
-    "test": "echo \"No test specified\" && exit 0"
+    "lint": "eslint --ext .js,.vue ./",
+    "test": "echo \"No test specified\" && exit 0",
+    "start": "quasar dev"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
-    "quasar": "^1.2.7"
+    "core-js": "^3.6.5",
+    "quasar": "^1.0.0"
   },
   "devDependencies": {
-    "@quasar/app": "^1.2.2",
-    "@vue/eslint-config-standard": "^4.0.0",
+    "@quasar/app": "^2.0.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.10.0",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-vue": "^5.0.0"
-  },
-  "engines": {
-    "node": ">= 8.9.0",
-    "npm": ">= 5.6.0",
-    "yarn": ">= 1.6.0"
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^7.7.0",
+    "eslint-webpack-plugin": "^2.4.0"
   },
   "browserslist": [
-    "last 1 version, not dead, ie >= 11"
-  ]
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
 }

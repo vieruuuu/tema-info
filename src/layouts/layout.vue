@@ -17,11 +17,7 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      bordered
-      content-class="bg-grey-2"
-    >
+    <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-2">
       <q-list>
         <q-item-label header>Navigare</q-item-label>
         <q-item to="/#">
@@ -76,15 +72,21 @@
     </q-drawer>
 
     <q-page-container>
-      <div :style="$route.path !== '/final' ? 'max-width: 1000px;margin: 0 auto;' : 'position: relative;'">
-       <div :style="$route.path !== '/final' ? 'margin-left:20px;' : ''">
-         <transition
-         mode="out-in"
-         enter-active-class="animated fadeIn"
-         leave-active-class="animated fadeOut"
-         >
-          <router-view />
-         </transition>
+      <div
+        :style="
+          $route.path !== '/final'
+            ? 'max-width: 1000px;margin: 0 auto;'
+            : 'position: relative;'
+        "
+      >
+        <div :style="$route.path !== '/final' ? 'margin-left:20px;' : ''">
+          <transition
+            mode="out-in"
+            enter-active-class="animated fadeIn"
+            leave-active-class="animated fadeOut"
+          >
+            <router-view />
+          </transition>
         </div>
       </div>
     </q-page-container>
@@ -93,32 +95,32 @@
 
 <script>
 export default {
-  name: 'MyLayout',
+  name: "MyLayout",
 
-  data () {
+  data() {
     return {
-      leftDrawerOpen: this.$route.path !== '/final',
+      leftDrawerOpen: this.$route.path !== "/final",
       macarOData: false,
-      seVedeHeaderul: this.$route.path !== '/final'
-    }
+      seVedeHeaderul: this.$route.path !== "/final"
+    };
   },
 
   watch: {
-    '$route.path' (val) {
-      if (val === '/final') {
-        this.leftDrawerOpen = false
-        this.seVedeHeaderul = false
-        this.macarOData = false
+    "$route.path"(val) {
+      if (val === "/final") {
+        this.leftDrawerOpen = false;
+        this.seVedeHeaderul = false;
+        this.macarOData = false;
       } else {
         if (!this.macarOData) {
           setTimeout(() => {
-            this.leftDrawerOpen = true
-            this.seVedeHeaderul = true
-            this.macarOData = true
-          }, 200)
+            this.leftDrawerOpen = true;
+            this.seVedeHeaderul = true;
+            this.macarOData = true;
+          }, 200);
         }
       }
     }
   }
-}
+};
 </script>
