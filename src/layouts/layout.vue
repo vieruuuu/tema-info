@@ -20,7 +20,7 @@
     <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-2">
       <q-list>
         <q-item-label header>Navigare</q-item-label>
-        <q-item to="/#">
+        <q-item to="/" exact>
           <q-item-section avatar>
             <q-icon name="home" />
           </q-item-section>
@@ -52,6 +52,46 @@
             <q-item-label>Proiectul Mozilla</q-item-label>
           </q-item-section>
         </q-item>
+        <q-expansion-item
+          expand-separator
+          icon="dashboard"
+          label="Module suplimentare"
+        >
+          <q-list>
+            <q-item to="/trace">
+              <q-item-section avatar>
+                <q-icon name="extension" />
+              </q-item-section>
+              <q-item-section>
+                <q-item-label>TraceMonkey</q-item-label>
+              </q-item-section>
+            </q-item>
+            <q-item to="/jager">
+              <q-item-section avatar>
+                <q-icon name="eject" />
+              </q-item-section>
+              <q-item-section>
+                <q-item-label>JägerMonkey</q-item-label>
+              </q-item-section>
+            </q-item>
+            <q-item to="/ion">
+              <q-item-section avatar>
+                <q-icon name="eco" />
+              </q-item-section>
+              <q-item-section>
+                <q-item-label>IonMonkey</q-item-label>
+              </q-item-section>
+            </q-item>
+            <q-item to="/odin">
+              <q-item-section avatar>
+                <q-icon name="invert_colors" />
+              </q-item-section>
+              <q-item-section>
+                <q-item-label>OdinMonkey</q-item-label>
+              </q-item-section>
+            </q-item>
+          </q-list>
+        </q-expansion-item>
         <q-item to="/brave">
           <q-item-section avatar>
             <q-icon name="work_outline" />

@@ -18,7 +18,7 @@
       </div>
 
       <div style="display: flex;justify-content: center;">
-        <q-btn rounded outline color="white" to="/#" label="Introducere" />
+        <q-btn rounded outline color="white" to="/" label="Introducere" />
       </div>
 
       <br />

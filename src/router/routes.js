@@ -10,6 +10,10 @@ const routes = [
         component: () => import("pages/netscapesijs.vue")
       },
       { path: "/mozilla", component: () => import("pages/mozilla.vue") },
+      { path: "/trace", component: () => import("pages/trace.vue") },
+      { path: "/jager", component: () => import("pages/jager.vue") },
+      { path: "/ion", component: () => import("pages/ion.vue") },
+      { path: "/odin", component: () => import("pages/odin.vue") },
       { path: "/brave", component: () => import("pages/brave.vue") },
       { path: "/final", component: () => import("pages/final.vue") }
     ]

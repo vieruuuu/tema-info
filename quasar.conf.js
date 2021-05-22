@@ -98,6 +98,6 @@ module.exports = function(/* ctx */) {
 
     // animations: 'all', // --- includes all animations
     // https://v1.quasar.dev/options/animations
-    animations: []
+    animations: ["fadeIn", "fadeOut"]
   };
 };

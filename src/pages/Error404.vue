@@ -3,13 +3,15 @@
     class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center"
   >
     <div>
-      <div style="font-size: 30vh">
+      <p class="text-h1">
         404
-      </div>
+      </p>
 
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
-      </div>
+      <br />
+
+      <p class="text-h3">
+        Nu există această pagină
+      </p>
 
       <q-btn
         class="q-mt-xl"
@@ -17,7 +19,7 @@
         text-color="blue"
         unelevated
         to="/"
-        label="Go Home"
+        label="Înapoi la introducere"
         no-caps
       />
     </div>
