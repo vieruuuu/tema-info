@@ -96,7 +96,6 @@
 
 <script>
 export default {
-  name: "PageIndex",
   data() {
     return {
       btn1: "Github",
